@@ -2,7 +2,7 @@ package models;
 
 public class Monomial {
     private double coefficient;
-    private int degree;
+    private final int degree;
     public boolean goThrough;
 
     public Monomial(double coefficient, int degree) {

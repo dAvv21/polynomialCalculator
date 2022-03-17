@@ -7,18 +7,18 @@ import java.awt.event.*;
 
 public class View extends JFrame {
 
-    private JPanel contentPane;
-    private JTextField firstPolTxt;
-    private JTextField secondPolTxt;
-    private JButton multiplicateButton;
-    private JButton divideButton;
-    private JButton addButton;
-    private JButton substractButton;
-    private JButton integrationButton;
-    private JButton derivationButton;
-    private JTextField answerTxt;
-    private JTextField restTxt;
-    private JLabel restLabel;
+    private final JPanel contentPane;
+    private final JTextField firstPolTxt;
+    private final JTextField secondPolTxt;
+    private final JButton multiplicateButton;
+    private final JButton divideButton;
+    private final JButton addButton;
+    private final JButton substractButton;
+    private final JButton integrationButton;
+    private final JButton derivationButton;
+    private final JTextField answerTxt;
+    private final JTextField restTxt;
+    private final JLabel restLabel;
 
 
     public View() {

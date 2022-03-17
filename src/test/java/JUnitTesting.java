@@ -7,7 +7,7 @@ public class JUnitTesting {
     @Test
     public void additionTest() {
 
-        String test1,test2,rezString;
+        String test1, test2, rezString;
         test1 = "4x^5+2x^3+6x^2+x^1";
         test2 = "2x^4+3x^3+2x^2+3x^1";
 
@@ -27,7 +27,7 @@ public class JUnitTesting {
         System.out.println("Rezultat : ");
         System.out.println(rezString);
 
-        assertEquals(rezString,"4.0X^5+2.0X^4+5.0X^3+8.0X^2+4.0X^1");
+        assertEquals(rezString, "4.0X^5+2.0X^4+5.0X^3+8.0X^2+4.0X^1");
 
 
     }
@@ -35,7 +35,7 @@ public class JUnitTesting {
     @Test
     public void substractTest() {
 
-        String test1,test2,rezString;
+        String test1, test2, rezString;
         test1 = "4x^5+2x^3+6x^2+x^1";
         test2 = "2x^4+3x^3+2x^2+3x^1";
 
@@ -55,14 +55,14 @@ public class JUnitTesting {
         System.out.println("Rezultat : ");
         System.out.println(rezString);
 
-        assertEquals(rezString,"4.0X^5-2.0X^4-1.0X^3+4.0X^2-2.0X^1");
+        assertEquals(rezString, "4.0X^5-2.0X^4-1.0X^3+4.0X^2-2.0X^1");
 
 
     }
 
     @Test
     public void multiplicationTest() {
-        String test1,test2,rezString;
+        String test1, test2, rezString;
         test1 = "4x^5+2x^3+6x^2+x^1";
         test2 = "2x^4+3x^3+2x^2+3x^1";
 
@@ -82,13 +82,13 @@ public class JUnitTesting {
         System.out.println("Rezultat : ");
         System.out.println(rezString);
 
-        assertEquals(rezString,"8.0X^9+12.0X^8+12.0X^7+30.0X^6+24.0X^5+21.0X^4+20.0X^3+3.0X^2");
+        assertEquals(rezString, "8.0X^9+12.0X^8+12.0X^7+30.0X^6+24.0X^5+21.0X^4+20.0X^3+3.0X^2");
 
     }
 
     @Test
     public void derivationTest() {
-        String test1,rezString;
+        String test1, rezString;
         test1 = "4x^5+2x^3+6x^2+x^1";
 
         Polynomial poly1 = new Polynomial();
@@ -103,12 +103,12 @@ public class JUnitTesting {
         System.out.println("Rezultat : ");
         System.out.println(rezString);
 
-        assertEquals(rezString,"20.0X^4+6.0X^2+12.0X^1+1.0X^0");
+        assertEquals(rezString, "20.0X^4+6.0X^2+12.0X^1+1.0X^0");
     }
 
     @Test
     public void integrationTest() {
-        String test1,rezString;
+        String test1, rezString;
         test1 = "4x^5+2x^3+6x^2+x^1";
 
         Polynomial poly1 = new Polynomial();
@@ -123,10 +123,9 @@ public class JUnitTesting {
         System.out.println("Rezultat : ");
         System.out.println(rezString);
 
-        assertEquals(rezString,"0.6666666666666666X^6+0.5X^4+2.0X^3+0.5X^2");
+        assertEquals(rezString, "0.6666666666666666X^6+0.5X^4+2.0X^3+0.5X^2");
 
     }
-
 
 
 }

@@ -10,7 +10,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Controller {
-    private View view;
+    private final View view;
     private Polynomial polynomial1;
     public Polynomial polynomial2, polRezultat, polRest;
     private boolean valid1, valid2;
